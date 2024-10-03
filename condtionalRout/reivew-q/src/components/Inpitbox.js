@@ -6,22 +6,31 @@ import { useNavigate } from 'react-router-dom'
 const Inpitbox = () => {
    const navigate= useNavigate()
    const [number,setNumber]= useState(null)
+   console.log(number);
+   
     const handleChange=(e)=>{
-        setNumber(e)
+      
+      
+      console.log("hello", typeof a);
+
+        if(e.target.value%2===0){
+
+           setNumber(e.target.value)
+        }else{
+          setNumber("")
+        }
     }
     const clicking=()=>{
        
-        
-           console.log("fhds");
-           navigate(`/display/${number}`)
-          
+       navigate(`/display/${number}`)
+       
         
     }
     
     
   return (
     <div>
-      <input type="number"  onChange={(e)=>handleChange(Number(e.target.value))} />
+      <input type="number"  onChange={handleChange} />
      <button onClick={clicking}>click</button>
      
     </div>

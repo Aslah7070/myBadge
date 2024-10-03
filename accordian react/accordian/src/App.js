@@ -1,15 +1,19 @@
 
 import './App.css';
-import Datas from './components/Datas';
-import Accordion from './components/Datas';
+import Display from './components/Display';
+// import Datas from './components/Datas';
+// import Accordion from './components/Datas';
 
 
 function App() {
   return (
     <div className="App">
       <h1>hello</h1>
-      <Datas/>
-      <Accordion/>
+      {/* <Datas/> */}
+      {/* <Accordion/> */}
+    <Display/>
+
+
     </div>
   );
 }
