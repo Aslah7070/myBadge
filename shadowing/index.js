@@ -37,28 +37,28 @@
 
 
 
-// let x = 10;
+var x = 10;
 
-// if (true) {
-//   let x = 20; // Block-scoped variable shadows the outer variable
-//   console.log(x); // Outputs: 20
-// }
-
-// console.log(x); // Outputs: 10 (outer x is still accessible)
-
-
-
-
-
-
-let x=10;
-
-
-if(true){
-    var x=100
+if (true) {
+  let x = 20; // Block-scoped variable shadows the outer variable
+  console.log(x); // Outputs: 20
 }
 
-console.log(x);
+console.log(x); // Outputs: 10 (outer x is still accessible)
+
+
+
+
+
+
+// let x=10;
+
+
+// if(true){
+//     var x=100
+// }
+
+// console.log(x);
 
 
 
